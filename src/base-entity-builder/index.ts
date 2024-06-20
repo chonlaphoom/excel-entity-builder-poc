@@ -38,7 +38,7 @@ export class BaseEntityBuilder
   }
   text(text?: string): BaseEntityBuilder {
     this.value.text = text;
-    return new BaseEntityBuilder(this.value);
+    return this
   }
   properties(props: baseEntityPropsType): BaseEntityBuilder {
     throw new Error("Method not implemented.");
