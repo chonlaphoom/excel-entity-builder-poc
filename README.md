@@ -1,1 +1,1 @@
-just [typescript project](https://en.wikipedia.org/wiki/Fluent_interface)
+[fluent interface](https://en.wikipedia.org/wiki/Fluent_interface)
