@@ -2,7 +2,7 @@ export type baseEntityPropsType =
   | {
       [key: string]: Excel.EntityPropertyType;
     }
-  | {
+| {
       [key: string]: Excel.CellValue & {
         propertyMetadata?: Excel.CellValuePropertyMetadata;
       };
@@ -36,12 +36,16 @@ export class BaseEntityBuilder
   build(): Excel.CellValue {
     return this.value;
   }
+ 
+
   text(text?: string): BaseEntityBuilder {
     this.value.text = text;
     return this
   }
   properties(props: baseEntityPropsType): BaseEntityBuilder {
     throw new Error("Method not implemented.");
+  
+  
   }
   basicType(): BaseEntityBuilder {
     throw new Error("Method not implemented.");
